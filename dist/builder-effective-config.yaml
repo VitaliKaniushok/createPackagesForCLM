@@ -1,0 +1,7 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.vitali.test_create
+win:
+  target: portable
+electronVersion: 4.0.7

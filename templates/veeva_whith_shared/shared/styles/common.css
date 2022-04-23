@@ -1,0 +1,88 @@
+/* _____________________________________________________________ Fonts _____ */
+@font-face {
+    font-family: "Lato-Regular";
+    src: url('../../shared/fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url('../../shared/fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: "Lato-Medium";
+    src: url('../../shared/fonts/Lato-Medium.ttf');
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url('../../shared/fonts/Lato-Bold.ttf');
+}
+
+/* _____________________________________________________ Common styles _____ */
+/* ------------------------------------------------ Container settings ----- */ 
+
+body {
+    font-family: "Lato-Regular", sans-serif;
+}
+sup,
+sub {
+    position: relative;
+    font-size: 0.5em;
+    line-height: 0px;
+}
+strong {
+    font-family: "Lato-Bold", sans-serif;
+}
+img {
+    zoom: 50%;
+}
+
+/* ------------------------------------------------ Common Blank Styles (Can be removed) ----- */ 
+
+.APslider-slide {
+    background: -webkit-linear-gradient(left, rgba(240,126,35,0.5) 0%,rgba(255,255,255,0.5) 25%,rgba(255,255,255,0.5) 75%,rgba(240,126,35,0.5) 100%);
+}
+.header__heading1 {
+    font-family: "Lato-Bold", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.slide__title {
+    font-family: "Lato-Medium", sans-serif;
+    font-size: 20px;
+    color: #f07e23;
+    text-align: center;
+    margin-top: 100px;
+}
+.slide__desc {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer__logo {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.slideNav__list {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.slideNav__listItem {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f07e23;
+    border-radius: 5px;
+    font-family: "Lato-Medium", sans-serif;
+    color: #fff;
+}
+
+
+/* --------------------------------- Commons animations -------------- */
+.APslider-slide--active .APpopup__open--ref  { -webkit-animation: fadeInLeft 0.7s ease-out 1s both; }
+.APslider-slide--active .slideNav__btn--chpl { -webkit-animation: fadeInLeft 0.7s ease-out 1.2s both; }
+.APslider-slide--active .slideFooter__logo   { -webkit-animation: bounceIn 0.7s ease-out 1.4s both; }
+.APslider-slide--active .slideHeader__title  { -webkit-animation: fadeInLeft 0.7s ease-out 0.4s both; }
+.APslider-slide--active .slideHeader__logo   { -webkit-animation: fadeInRight 0.7s ease-out 0.5s both; }
+
+/* --------------------------------- AP library -------------- */
+

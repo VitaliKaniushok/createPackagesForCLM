@@ -1,0 +1,155 @@
+/*_________________________________________________________ Animation _____ */
+
+@import url("animate.css");
+
+/* _______________________________________________________ [CSS Reset] _____ */
+*{box-sizing: border-box;} 
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
+address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
+var,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    /*vertical-align: baseline; */
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+ol,ul {
+    list-style: none;
+}
+/* ___________________________________________________________ [Fonts] _____ */
+
+/**/
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../media/fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "Lato-Black";
+    src: url("../media/fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: "Lato-Italic";
+    src: url("../media/fonts/Lato-Italic.ttf");
+}
+/* __________________________________________________________ [Layout] _____ */
+.wrapper_kod body {
+    color: #626269;
+}
+
+.wrapper_kod li {
+    display:inline-block;
+    text-align: center;
+    vertical-align:top;
+}
+.wrapper_kod {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background:#fff;
+    color:#272955;
+    font-family: 'Lato-Regular';
+}
+.wrapper_kod strong {
+    font-family: 'Lato-Black';
+}
+.wrapper_kod i {
+    font-family: "Lato-Italic";
+}
+.wrapper_kod .header {
+    height: 248px;
+    position: relative;
+    background: url(../media/images/header.png) no-repeat;
+    background-size: cover;
+}
+.wrapper_kod .text-header {
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    font-size: 18px;    
+    background-image: url(../media/images/godloPTC.png);
+    background-repeat: no-repeat;
+    background-size: 54px 70px;
+    background-position: 3px 0;
+    padding:0px 0 5px 75px;
+}
+.wrapper_kod .text-invitation {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    color: #fff;
+    font-size: 48px;   
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(left,#2a2d55,#61b781 65%,#44706a 100%);
+    padding:20px 50px;
+    border-radius:50px 0 0 50px;
+}
+.wrapper_kod .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background:#6BC0AE;
+    font-size:14px;
+    color: #fff;
+    border-radius:50%;
+    position: absolute;
+}
+.wrapper_kod section {
+    position: relative;
+    padding-bottom: 5px;
+}
+.wrapper_kod .topLeftSection,
+.wrapper_kod .topRightSection,
+.wrapper_kod .bottomRightSection,
+.wrapper_kod .bottomLeftSection {
+    display: inline-block;
+    position: relative;
+    width: 510px;
+    vertical-align: top;
+}
+.wrapper_kod ul {
+    position: absolute;
+    top:25px;left:50px;
+}
+.wrapper_kod ul li {
+    display:block;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom:7px;
+    letter-spacing: -0.05em;
+}
+.wrapper_kod ul .link {
+    text-decoration: none;
+    color: #fff;
+    background: #282954;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.wrapper_kod ul li:nth-of-type(5) {
+    padding: 5px 0 25px;
+}
+/*-*/
+
+/*____________POPUP________________*/
+
+}
+/* ------------------------------kod_s_00 animations----------*/
+
+.wrapper_kod .topLeftSection { -webkit-animation: fadeInLeft 1s 0.2s ease-out both; }
+.wrapper_kod .bottomRightSection,
+.wrapper_kod .topRightSection { -webkit-animation: fadeInRight 1s 0.2s ease-out both; }

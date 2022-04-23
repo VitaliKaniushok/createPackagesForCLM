@@ -1,0 +1,146 @@
+/**
+ * Includes CSS Reset by Eric Meyer
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+ */
+
+/* _________________________________________________________ CSS Reset _____ */
+/* ------------------------------------------------- CSS Reset: Cursor ----- */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* ----------------- CSS Reset: HTML5display-roleresetforolderbrowsers ----- */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;margin:0;padding:0;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+/* ------------------------------------------------- CSS Reset: Cursor ----- */*{cursor:default;}a,a*,area,area*,button,button*,select,select*{cursor:pointer;}input.text,input.password,textarea{cursor:text;}abbr,abbr*{cursor:help;}
+
+/* _____________________________________________________________ Fonts _____ */
+
+
+/* _____________________________________________________ Common styles _____ */
+/* ------------------------------------------------ Container settings ----- */ 
+body {
+    background-color: #000;
+}
+h1, h2, h3, p, span, a {
+    font-weight: normal;
+    font-style: normal;
+}
+sup,
+sub {
+    position: relative;
+    font-size: 0.5em;
+    line-height: 0px;
+}
+strong {
+    font-family: "DINPro-Bold";
+}
+em {
+    font-family: "DINPro-Italic";
+}
+strong em {
+    font-family: "DINPro-BoldItalic";
+}
+img {
+    position: absolute;
+}
+* {
+	tap-highlight-color: rgba(0,0,0,0) !important;
+	-o-tap-highlight-color: rgba(0,0,0,0) !important;
+	-moz-tap-highlight-color: rgba(0,0,0,0) !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+} 
+.swiper-container {
+    margin: 0;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 1024px;
+    height: 768px;
+    font-family: "DINPro";
+    color: #fff;
+    position: relative;
+}
+.swiper-slide {
+    width: 1024px;
+    height: 768px;
+    background-color: #fff;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.swiper-slide .blueBox {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 33px;
+    height: 85px;
+    background-color: #24347d;
+}
+.swiper-slide .titleText {
+    top: 58px;
+    left: 67px;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    top: 33px;
+    margin-top: 0;
+    width: 51px;
+    height: 51px;
+    -webkit-background-size: 51px 51px;
+    background-size: 51px 51px;
+}
+.swiper-button-next {
+    position: absolute;
+    right: 33px;
+    background-image: url(../images/swiper-button-next.png);
+}
+.swiper-button-prev {
+    left: auto;
+    right: 100px;
+    background-image: url(../images/swiper-button-prev.png);
+}
+.swiper-slide .rupafinLogo {
+    width: 220px;
+    right: 23px;
+    bottom: 51px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1024px;
+    height: 40px;
+    background-color: #24347d;
+    z-index: 5;
+}
+.footer .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 67px;
+    width: 650px;
+    height: 51px;
+    background-image: url(../images/footerNavi.png);
+    -webkit-background-size: 650px 51px;
+    background-size: 650px 51px;
+}
+.footer .navigation .navBtn {
+    float: left;
+    width: 51px;
+    height: 51px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 51px 51px;
+    background-size: 51px 51px;
+    margin-right: 15px;
+    background-position: 0 0;
+}
+.footer .navigation .btnGoToS7 {
+    margin-right: 0;
+}
+.swiper-slide .clearfix {
+    clear: both;
+}
+
+/* --------------------------------- Commons animations -------------- */
+.swiper-button-next { -webkit-animation: bounceInRight 0.7s ease-out 0.4s; -webkit-animation-fill-mode: both; }
+.swiper-button-prev { -webkit-animation: bounceInRight 0.7s ease-out 0.5s; -webkit-animation-fill-mode: both; }
+.titleText          { -webkit-animation: fadeInRight   0.7s ease-out 0.6s; -webkit-animation-fill-mode: both; }
+.rupafinLogo        { -webkit-animation: fadeInRight   0.7s ease-out 0.7s; -webkit-animation-fill-mode: both; }
+
+

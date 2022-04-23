@@ -1,0 +1,37 @@
+{
+	elements : {		
+        'chplBtn' : {
+			activate : 'loadDocument media://Ibrance_ChPL_new.pdf'
+		}
+	},
+	selectionGroups : {
+			
+	},
+	runtime : {		
+		Timeout: function() {
+			$('.popupBoxBtn').bind( 'touchstart mousedown', function(e) {
+		        e.preventDefault();
+		        var id = $(this).attr('data-popup');
+		        $(".popup").each(function(){
+		            $(this).hide();
+		            if($(this).attr('id') == id) {
+		                $(this).fadeIn(300);
+		            }
+		        });
+		    });
+		    $('.closePopup').bind( 'touchstart mousedown', function() {
+		        $('.popup').fadeOut(300);
+		    });
+		}
+	},
+	timeouts : {
+		t1: {
+            time: '0.01s',
+            action: 'execute Timeout()'
+        }
+	},
+	attachments : {
+	
+	}
+}
+

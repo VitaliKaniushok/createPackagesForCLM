@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="css/style.css" rel="stylesheet">		
+		<title>Generator Packages</title>
+	</head>
+	<body>
+		<div class="bookmark mitouch">
+			<h2>MiTouch</h2>						
+			<ul>
+				<li>
+					<label><span>Wprowadź <strong>ścieżkę</strong> :</span> <input class="nameDir" type="text" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>nazwę</strong> prezentacij :</span> <input class="namePres" placeholder="Wprowadź nazwę prezentacij" type="text"></label>
+				</li>
+				<li>
+					<label><span>Wybierz <strong>szablon</strong> pliku HTML :</span> <input class="template" type="text" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>kod</strong> prezentacji :</span> <input class="code" maxlength="3" placeholder="Wprowadź kod" type="text"></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>ilość</strong> slajdów :</span> <input class="quantitySlajd" maxlength="2" placeholder="Wprowadź ilość slajdów"></label>
+				</li>
+			</ul>			
+			
+			<button class="make makeDir">Utwórz</button>
+
+			<hr>
+
+			<ul class="inputs">
+				<li>
+					<label><span>Wybierz paczkę do <strong>archiwizacji</strong> :</span> <input class="packageForZip" type="text" placeholder="Wybierz paczkę" readonly default></label></label>
+				</li>
+			</ul>
+
+			<button class="make makeArchive">Spakuj</button>
+		</div>
+
+		<div class="bookmark veeva">
+			<h2>Veeva</h2>
+
+			<ul class="veeva-pack">
+				<li>
+					<label><span>Wprowadź <strong>ścieżkę</strong> :</span> <input class="nameDir" type="text" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>nazwę</strong> prezentacij :</span> <input class="namePres" type="text"></label>
+				</li>
+				<li>
+					<label><span>Wybierz <strong>szablon</strong> pliku HTML :</span> <input class="template" type="text" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź nazwę <strong>KM</strong> :</span> <input class="nameKM" type="text"></label>
+				</li>
+			</ul>
+			
+			<div><p class="addKm">Dodaj KM</p></div>
+
+			<div class="checkBox">
+				<input class="isShared" id="sharedPackage" type="checkbox">
+				<label for="sharedPackage">Czy paczka powinna zawierać folder '<strong>shared</strong>' ?</label>
+			</div>
+			
+			<button class="make makeDir">Utwórz</button>
+			
+			<hr>
+
+			<ul class="inputs">
+				<li>
+					<label><span>Wybierz paczkę do <strong>archiwizacji</strong> :</span> <input class="packageForZip" type="text" placeholder="Wybierz paczkę" readonly default></label></label>
+				</li>
+			</ul>
+
+			<button class="make makeArchive">Spakuj</button>
+
+		</div>
+
+		<div class="bookmark clm active">
+			<h2>CLM</h2>			
+			<ul>
+				<li>
+					<label><span>Wyberz <strong>ścieżkę</strong> :</span> <input class="nameDir" type="text" placeholder="Wybierz ścieżkę" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>nazwę</strong> prezentacij :</span> <input class="namePres" maxlength="150" type="text" placeholder="Wprowadź nazwę prezentacij"></label>
+				</li>
+				<li>
+					<label><span>Wybierz <strong>szablon</strong> prezentacji :</span> <input class="template" type="text" placeholder="Wybierz szablon" readonly></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>kod</strong> prezentacji :</span> <input class="code" maxlength="3" placeholder="Wprowadź kod" type="text"></label>
+				</li>
+				<li>
+					<label><span>Wprowadź <strong>ilość</strong> slajdów :</span> <input class="quantitySlajd" maxlength="2" placeholder="Wprowadź ilość slajdów"></label>
+				</li>
+			</ul>
+
+			<button class="make makeDir">Utwórz</button>
+
+			<hr>
+
+			<ul class="inputs">
+				<li>
+					<label><span>Wybierz paczkę do <strong>archiwizacji</strong> :</span> <input class="packageForZip" type="text" placeholder="Wybierz paczkę" readonly default></label></label>
+				</li>
+			</ul>
+
+			<button class="make makeArchive">Spakuj</button>
+		</div>
+		<script>window.$ = window.jQuery = require('./js/jquery_3.3.1.min');</script>
+		<script type="text/javascript" src="./js/draft.js"></script>
+		<script type="text/javascript" src="./js/createZipClm.js"></script>
+		<script type="text/javascript" src="./js/createClmPack.js"></script>
+		<script type="text/javascript" src="./js/createVeevaPack.js"></script>
+		<script type="text/javascript" src="./js/createZipVeeva.js"></script>
+		<script type="text/javascript" src="./js/createMiTouchPack.js"></script>
+		<script type="text/javascript" src="./js/createZipMitouch.js"></script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "create_a_package_prezentation",
+  "version": "1.0.0",
+  "description": "Create a package prezentation",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "pack": "electron-builder --dir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitali",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "copy-dir": "^0.4.0"
+  },
+  "devDependencies": {
+    "electron": "^4.0.7",
+    "electron-builder": "^20.38.5"
+  },
+  "build": {
+    "appId": "com.vitali.test_create",
+
+
+    "win": {
+      "target": "portable"
+    }
+  }
+}

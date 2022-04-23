@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="../shared/styles/ap-library.css"><!-- Swiper CSS module -->
+	<link rel="stylesheet" href="../shared/styles/animate.css"><!-- Common styles -->
+	<link rel="stylesheet" href="../shared/styles/common.css"><!-- Animation library -->
+	<link rel="stylesheet" href="assets/styles/slides.css"><!-- Slide specyfic styles -->
+
+	<title>BLANK Template</title>
+</head>
+<body>
+
+	<!-- Slider main container -->
+	<div class="APslider-container">
+
+		<header class="APslider-Header">
+			<h1 class="header__heading1">Key Message 1</h1>
+		</header>
+		
+		<div id="slide-1" class="APslider-slide" data-start="true">
+			<h2 class="slide__title">Slajd 1</h2>
+			<p class="slide__desc">Pusty slajd</p>
+		</div>
+
+		<div id="slide-2" class="APslider-slide">
+			<h2 class="slide__title">Slajd 2</h2>
+			<p class="slide__desc">Slajd z animacjami</p>
+		</div>
+
+		<div id="slide-3" class="APslider-slide">
+			<h2 class="slide__title">Slajd 3</h2>
+			<p class="slide__desc">Obszar z wyłączonym swipem<br>Wystarczy do dowolnego elementu dodać klasę "APnoSwipe"</p>
+			<div class="APnoSwipe">&nbsp;</div>
+		</div>
+
+		<footer class="APslider-Footer">
+			<nav>
+				<ul class="slideNav__list">
+					<li class="slideNav__listItem AP-go-to-slide" data-slide="Brand_PL_PL_Presentation_SlideName_01.zip">Home</li>
+					<li class="slideNav__listItem AP-go-to-slide" data-slide="Brand_PL_PL_Presentation_SlideName_02.zip" data-view="1">KM2 S2</li>
+					<li class="slideNav__listItem AP-go-to-slide" data-slide="Brand_PL_PL_Presentation_SlideName_03.zip">KM3</li>
+					<li class="slideNav__listItem AP-go-to-slide" data-slide="ActivePharma_PL_PL_AP_Demo_slide-0.zip" data-presentation="ActivePharma_PL_PL_AP_Demo">Prezentacja Demo</li>
+					<li class="slideNav__listItem APpopup__open--ref">Referencje</li>
+					<li class="slideNav__listItem AP-go-to-slide" data-inner-slide="3">GoToSlide-3</li>
+				</ul>
+			</nav>
+			<img class="footer__logo" src="../shared/images/logo-AP_0001_logo-AP.png">
+		</footer>
+
+		<aside class="APpopup APpopup--ref">
+			<div class="APpopup__container">
+				<div class="APpopup__close"></div>
+				<h2>Referencje:</h2>
+				<ol>
+					<li>Eichenauer DA i wsp., <em>Annals of Oncology 25 (Supplement 3)</em> 2014; iii70-iii75</li>
+					<li>Majhail NS i wsp., <em>Biology of  Blood and  Marrow Transplantation</em> 2006; 12:1065-72</li>
+					<li>Sureda A i wsp., <em>Annals of  Oncology</em> 2005; 16:625-633</li>
+					<li>Bonthapally V i wsp., <em>Current Medical Research and Opinion</em> 2015; 34:7, 1377-1389</li>
+					<li>Załącznik nr 1 do decyzji Ministra Zdrowia nr 27KP/1/39W z dnia 20 kwietnia 2018 roku</li>
+					<li>Younes A i wsp., <em>Journal of  Clinical  Oncology</em> 2012; 128:1562-1566</li>
+					<li>Bonthapally V i wsp., <em>Current Medical Research and Opinion</em> 2015; 31:5, 993-1001</li>
+				</ol>
+			</div>
+		</aside>
+	</div>
+	
+	<!-- Scripts JS -->
+	<script type="text/javascript" src="../shared/scripts/libs/jquery-1.12.4.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="../shared/scripts/libs/veeva-library-181.9.0.js"></script><!-- Veeva API -->
+	<script type="text/javascript" src="../shared/scripts/libs/ap.library.js"></script>
+	<script type="text/javascript" src="../shared/scripts/common.js"></script><!-- Common scripts -->
+	<script type="text/javascript" src="assets/scripts/local.js"></script>
+
+</body>
+</html>

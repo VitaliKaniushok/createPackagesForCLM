@@ -1,0 +1,105 @@
+* {box-sizing: border-box;margin:0;padding:0;}
+html,body {
+	background-color:#ffbb18;
+	width: 100%;
+	height: 100%;
+}
+hr {	
+	margin: 20px 0;
+}
+.bookmark {
+	position: absolute;
+	top:0;left:0;
+	width: 100%;
+	height: calc(100% - 35px);
+	margin-top: 35px;
+	border: 1px solid #000;
+	background:#686766;
+	color:#fff;
+	min-width: 600px;
+	opacity: 0.7;
+	padding: 50px 20px 50px 50px;
+}
+.bookmark h2 {
+	font-size: 18px;
+	line-height: 30px;
+	background:#686766;
+	font-weight: bold;
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	top:-30px;
+	text-align:center;
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-radius: 20px 20px 0 0;
+	cursor:pointer;
+}
+.bookmark.clm {
+	opacity: 1;
+}
+.clm h2 {
+	left:30px;
+}
+.veeva h2 {
+	left:150px;
+}
+.mitouch h2 {
+	left:270px;
+}
+/*-*/
+.bookmark ul li {
+	font-size: 20px;
+	padding: 10px 0;
+	position: relative;
+	list-style:none;
+}
+.bookmark strong {
+	color:#ffbb18;
+}
+.bookmark ul li span {
+	display: inline-block;
+}
+.bookmark ul li label {
+	display: flex;
+	justify-content: space-between;
+}
+.bookmark ul li input {	
+	width: calc(100% - 280px);
+}
+/*-*/
+.addKm {
+	display: inline-block;
+	margin: 20px 0px;
+	cursor:pointer;
+	text-decoration: underline;
+	color:#ffbb18;
+	font-size:18px;
+}
+.addKm:hover {
+	color:#ff9518;
+}
+.make {
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color:#000;
+	cursor:pointer;
+	margin: 20px 0px 40px;
+	background: linear-gradient(#e9e5e0, #898785);
+}
+.make:hover {
+	background: linear-gradient(#898785,#e9e5e0);
+}
+.make:active {
+	background: linear-gradient(#e9e5e0, #898785);
+	font-size: 17px;
+}
+.errors {
+	border: 1px solid red;
+	color:red;
+	font-weight:bold;
+}
+/**/
